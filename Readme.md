@@ -47,3 +47,16 @@ Not necessarily. Even high-end microcontrollers will experience debounce if they
 Debouncing can be handled using:
 1. Hardware solutions – Adding a capacitor (RC circuit) or using Schmitt trigger circuits.
 2. Software solutions – Implementing a debounce delay in code using timers or software filters.
+
+# Why Do We Use Interrupts
+Interrupts are used in microcontrollers, processors, and embedded systems to efficiently handle events without constantly checking for them. Instead of the CPU continuously polling for an event (which wastes processing power), an interrupt signals the CPU only when needed, allowing it to respond quickly.
+
+Key Reasons:-
+1. Faster Response to Events
+2. CPU Efficiency & Power Saving
+3. Real-Time Processing
+4. Avoids Polling
+5. Multitasking Support
+
+# How does interrupt lower the processing cost of the micro-controller?
+Interrupts reduce processing costs by eliminating polling (busy-waiting), allowing the microcontroller (MCU) to perform other tasks or enter low-power mode until an event occurs.
